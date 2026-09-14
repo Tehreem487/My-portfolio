@@ -2,14 +2,14 @@ import { useEffect, useRef, useState } from "react";
 import "./index.css";
 
 const projects = [
-  { 
-    title: "Blog Website", 
+ { 
+    title: "StayEase — Hotel Booking App", 
     type: "Full Stack", 
     tech: "React • Node • MongoDB", 
-    desc: "A clean full-stack blogging platform with authentication and content management.", 
-    icon: "✦", 
-    image: "/images/img1.jpg",
-    liveUrl: "https://blog-website-2-phi.vercel.app/"
+    desc: "A feature-rich hotel booking platform with destination search, luxury stay listings, and seamless reservation management.", 
+    icon: "🏨", 
+    image: "/images/img1.jpg", 
+    liveUrl: "#" 
   },
 
   { 
