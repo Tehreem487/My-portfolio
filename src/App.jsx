@@ -9,7 +9,7 @@ const projects = [
     desc: "A feature-rich hotel booking platform with destination search, luxury stay listings, and seamless reservation management.", 
     icon: "🏨", 
     image: "/images/img1.jpg", 
-    liveUrl: "#" 
+    liveUrl: "https://hotel-booking-frontend-rcd3.vercel.app/" 
   },
 
   { 
