@@ -333,14 +333,14 @@ textarea {
   animation: bounce 1.7s infinite;
 }
 
-/* FULL SIZE HERO IMAGE */
+/* LAPTOP & DEFAULT VIEW PAR IMAGE KO FIXED KARNA */
 
 .hero-girl {
-  position: absolute;
-  right: -6%;
-  bottom: -8%;
-  width: 65vw;
-  max-width: 900px;
+  position: fixed;
+  right: 2%;
+  bottom: 0px;
+  width: 38vw;
+  max-width: 650px;
   height: auto;
   z-index: 1;
   pointer-events: none;
@@ -350,7 +350,7 @@ textarea {
 
 @media (max-width:1200px) {
   .hero-girl {
-    width: 50vw;
+    width: 42vw;
     right: 0%;
   }
 }
@@ -363,6 +363,8 @@ textarea {
   width: min(1180px,88%);
   margin: auto;
   padding: 115px 0;
+  position: relative;
+  z-index: 2;
 }
 
 .section-title {
@@ -761,6 +763,8 @@ footer {
   text-align: center;
   padding: 45px 20px 55px;
   color: var(--muted);
+  position: relative;
+  z-index: 2;
 }
 
 .footer-brand {
@@ -1095,22 +1099,13 @@ footer p {
   }
 
   .hero-girl {
-    display: block;
-    width: 58vw;
-    max-width: 700px;
-    right: -4%;
-    bottom: -2%;
-  }
-
-  .hero {
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    width: 45vw;
+    right: 0%;
   }
 }
 
 /* =========================
-   MOBILE (FIXED IMAGE ACROSS ALL SECTIONS)
+   MOBILE
 ========================= */
 
 @media (max-width:760px) {
@@ -1159,7 +1154,7 @@ footer p {
     background-repeat: no-repeat;
   }
 
-  /* Image ko mobile par fixed kar diya gaya hai taake scroll karne par apni jagah bani rahe */
+  /* Mobile par image ka size aur position set ki gayi hai taake fixed rahe */
   .hero-girl {
     position: fixed;
     display: block;
@@ -1167,7 +1162,7 @@ footer p {
     max-width: 200px;
     right: -10px;
     bottom: 0px;
-    z-index: 1; /* Text ke neeche ya background mein rahegi taake content readable rahay */
+    z-index: 1;
     pointer-events: none;
     filter: drop-shadow(0 10px 20px rgba(0,0,0,.4));
     opacity: 0.9;
