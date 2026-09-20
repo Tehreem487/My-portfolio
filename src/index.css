@@ -1154,17 +1154,17 @@ footer p {
     background-repeat: no-repeat;
   }
 
-  /* Mobile par image ko clear, fixed aur neeche se thoda upar adjust kiya gaya hai taake chipki hui na lage */
+  /* Mobile par image ko fixed, clear, aur thoda bara karke proper spacing ke sath set kiya gaya hai */
   .hero-girl {
-    position: absolute;
-    right: 10px;
-    bottom: 25px;
-    width: 50vw;
-    max-width: 240px;
+    position: fixed;
+    right: 5px;
+    bottom: 0px;
+    width: 65vw;
+    max-width: 320px;
     height: auto;
     z-index: 1;
     pointer-events: none;
-    filter: drop-shadow(0 20px 40px rgba(0,0,0,.6));
+    filter: drop-shadow(0 25px 50px rgba(0,0,0,.7));
     opacity: 1;
     object-fit: contain;
   }
