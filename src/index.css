@@ -1110,7 +1110,7 @@ footer p {
 }
 
 /* =========================
-   MOBILE (FIXED)
+   MOBILE (PROFESSIONAL FIX)
 ========================= */
 
 @media (max-width:760px) {
@@ -1147,8 +1147,7 @@ footer p {
   }
 
   .hero {
-    min-height: auto;
-    padding-bottom: 60px;
+    min-height: 100vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1160,23 +1159,15 @@ footer p {
     background-repeat: no-repeat;
   }
 
-  /* Fixed Image Layout for Mobile */
+  /* Mobile par image hide kar di gayi hai taake overlapping khatam ho aur professional look aaye */
   .hero-girl {
-    position: relative;
-    display: block;
-    width: 80vw;
-    max-width: 350px;
-    margin: 30px auto 0;
-    right: auto;
-    bottom: auto;
-    z-index: 1;
-    filter: drop-shadow(0 20px 40px rgba(0,0,0,.5));
+    display: none;
   }
 
   .hero-content {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: left;
     padding-top: 120px;
     position: relative;
     z-index: 5;
@@ -1199,18 +1190,16 @@ footer p {
 
   .hero p {
     font-size: 15px;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .hero-buttons {
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
   }
 
   .hello,
   .eyebrow {
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .hero-quote {
