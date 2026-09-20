@@ -1154,9 +1154,19 @@ footer p {
     background-repeat: no-repeat;
   }
 
-  /* Mobile par image ko hide kar diya hai taake screen clean aur professional lage */
+  /* Mobile par image ko background mein professional aur graceful look dene ke liye set kiya gaya hai */
   .hero-girl {
-    display: none;
+    position: absolute;
+    right: -20px;
+    bottom: 0px;
+    width: 55vw;
+    max-width: 260px;
+    height: auto;
+    z-index: 1;
+    pointer-events: none;
+    filter: drop-shadow(0 20px 40px rgba(0,0,0,.6));
+    opacity: 0.35;
+    object-fit: contain;
   }
 
   .hero-content {
@@ -1164,7 +1174,7 @@ footer p {
     align-items: flex-start;
     text-align: left;
     padding-top: 100px;
-    padding-bottom: 50px;
+    padding-bottom: 70px;
     position: relative;
     z-index: 5;
   }
