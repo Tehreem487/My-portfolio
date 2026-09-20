@@ -1,4 +1,3 @@
-```css
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Parisienne&display=swap');
 
 :root {
@@ -1095,10 +1094,6 @@ footer p {
     grid-template-columns: repeat(2,1fr);
   }
 
-  /*
-    IMPORTANT:
-    Hero image mobile/tablet par hide nahi hogi.
-  */
   .hero-girl {
     display: block;
     width: 58vw;
@@ -1115,7 +1110,7 @@ footer p {
 }
 
 /* =========================
-   MOBILE
+   MOBILE (FIXED)
 ========================= */
 
 @media (max-width:760px) {
@@ -1144,48 +1139,45 @@ footer p {
     background: rgba(10,11,28,.96);
     border: 1px solid var(--line);
     border-radius: 20px;
+    z-index: 100;
   }
 
   .nav.open {
     display: flex;
   }
 
-  /*
-    MOBILE HERO IMAGE FIX
-    Image ko desktop jaisi proportion mein
-    screen ke andar rakha gaya hai.
-  */
   .hero {
-    min-height: 900px;
+    min-height: auto;
+    padding-bottom: 60px;
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
-    overflow: hidden;
   }
 
   .app.light .hero {
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
   }
 
+  /* Fixed Image Layout for Mobile */
   .hero-girl {
+    position: relative;
     display: block;
-    position: absolute;
-    width: 105vw;
-    max-width: none;
-    right: -8%;
-    bottom: 0;
-    height: auto;
+    width: 80vw;
+    max-width: 350px;
+    margin: 30px auto 0;
+    right: auto;
+    bottom: auto;
     z-index: 1;
-    pointer-events: none;
-    object-fit: contain;
-    filter: drop-shadow(0 30px 60px rgba(0,0,0,.55));
+    filter: drop-shadow(0 20px 40px rgba(0,0,0,.5));
   }
 
   .hero-content {
-    align-items: flex-start;
-    padding-top: 150px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 120px;
     position: relative;
     z-index: 5;
   }
@@ -1197,11 +1189,28 @@ footer p {
   }
 
   .hero h1 {
-    font-size: 65px;
+    font-size: 52px;
+    letter-spacing: -1px;
   }
 
   .hero h2 {
-    font-size: 30px;
+    font-size: 26px;
+  }
+
+  .hero p {
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hello,
+  .eyebrow {
+    justify-content: center;
   }
 
   .hero-quote {
@@ -1238,4 +1247,3 @@ footer p {
     display: none;
   }
 }
-```
