@@ -1154,25 +1154,27 @@ footer p {
     background-repeat: no-repeat;
   }
 
-  /* Mobile par image ka size aur position behtar aur balanced set ki gayi hai */
+  /* Mobile par image ki positioning aur sizing theek kar di hai taake cut na ho aur overlap bhi na ho */
   .hero-girl {
-    position: fixed;
+    position: relative;
     display: block;
-    width: 55vw;
-    max-width: 220px;
-    right: 10px;
-    bottom: 0px;
-    z-index: 1;
+    width: 70vw;
+    max-width: 250px;
+    margin: 25px auto 0 auto;
+    right: auto;
+    bottom: auto;
+    z-index: 2;
     pointer-events: none;
     filter: drop-shadow(0 10px 20px rgba(0,0,0,.5));
-    opacity: 0.92;
+    opacity: 1;
   }
 
   .hero-content {
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
-    padding-top: 120px;
+    padding-top: 100px;
+    padding-bottom: 50px;
     position: relative;
     z-index: 5;
   }
@@ -1206,7 +1208,8 @@ footer p {
     justify-content: flex-start;
   }
 
-  .hero-quote {
+  .hero-quote,
+  .mouse-hint {
     display: none;
   }
 
