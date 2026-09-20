@@ -333,7 +333,7 @@ textarea {
   animation: bounce 1.7s infinite;
 }
 
-/* LAPTOP & DEFAULT VIEW PAR IMAGE KO FIXED KARNA */
+/* LAPTOP & DEFAULT VIEW PAR IMAGE FIXED */
 
 .hero-girl {
   position: fixed;
@@ -1154,18 +1154,18 @@ footer p {
     background-repeat: no-repeat;
   }
 
-  /* Mobile par image ka size aur position set ki gayi hai taake fixed rahe */
+  /* Mobile par image ka size aur position behtar aur balanced set ki gayi hai */
   .hero-girl {
     position: fixed;
     display: block;
-    width: 45vw;
-    max-width: 200px;
-    right: -10px;
+    width: 55vw;
+    max-width: 220px;
+    right: 10px;
     bottom: 0px;
     z-index: 1;
     pointer-events: none;
-    filter: drop-shadow(0 10px 20px rgba(0,0,0,.4));
-    opacity: 0.9;
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,.5));
+    opacity: 0.92;
   }
 
   .hero-content {
