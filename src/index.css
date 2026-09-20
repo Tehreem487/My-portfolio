@@ -1110,7 +1110,7 @@ footer p {
 }
 
 /* =========================
-   MOBILE (PROFESSIONAL FIX)
+   MOBILE (FIXED IMAGE ACROSS ALL SECTIONS)
 ========================= */
 
 @media (max-width:760px) {
@@ -1159,9 +1159,18 @@ footer p {
     background-repeat: no-repeat;
   }
 
-  /* Mobile par image hide kar di gayi hai taake overlapping khatam ho aur professional look aaye */
+  /* Image ko mobile par fixed kar diya gaya hai taake scroll karne par apni jagah bani rahe */
   .hero-girl {
-    display: none;
+    position: fixed;
+    display: block;
+    width: 45vw;
+    max-width: 200px;
+    right: -10px;
+    bottom: 0px;
+    z-index: 1; /* Text ke neeche ya background mein rahegi taake content readable rahay */
+    pointer-events: none;
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,.4));
+    opacity: 0.9;
   }
 
   .hero-content {
