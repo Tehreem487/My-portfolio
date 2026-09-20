@@ -1,3 +1,4 @@
+```css
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Parisienne&display=swap');
 
 :root {
@@ -1150,34 +1151,36 @@ footer p {
   }
 
   /*
-    MOBILE IMAGE FIX
-    Image ko hide nahi karna.
+    MOBILE HERO IMAGE FIX
+    Image ko desktop jaisi proportion mein
+    screen ke andar rakha gaya hai.
   */
   .hero {
     min-height: 900px;
-
-    background-size: auto 100%;
-    background-position: 68% center;
+    background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat;
+    overflow: hidden;
   }
 
   .app.light .hero {
-    background-size: auto 100%;
-    background-position: 68% center;
+    background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat;
   }
 
-  /*
-    Agar hero-girl image JSX mein use ho rahi hai,
-    mobile par bhi visible rahegi.
-  */
   .hero-girl {
     display: block;
-    width: 92vw;
+    position: absolute;
+    width: 105vw;
     max-width: none;
-    right: -20%;
+    right: -8%;
     bottom: 0;
+    height: auto;
     z-index: 1;
+    pointer-events: none;
+    object-fit: contain;
+    filter: drop-shadow(0 30px 60px rgba(0,0,0,.55));
   }
 
   .hero-content {
@@ -1235,3 +1238,4 @@ footer p {
     display: none;
   }
 }
+```
