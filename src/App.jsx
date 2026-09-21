@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import "./index.css";
 
 const projects = [
- { 
+  { 
     title: "StayEase — Hotel Booking App", 
     type: "Full Stack", 
     tech: "React • Node • MongoDB", 
@@ -11,7 +11,6 @@ const projects = [
     image: "/images/img1.jpg", 
     liveUrl: "https://hotel-booking-frontend-rcd3.vercel.app/" 
   },
-
   { 
     title: "E-Commerce Website", 
     type: "E-Commerce", 
@@ -150,22 +149,22 @@ function App() {
   };
 
   const nav = ["home", "about", "skills", "projects", "certificates", "education", "resume", "contact"];
-  const filters = ["All",...new Set(projects.map((p) => p.type))];
-  const visibleProjects = filter === "All"? projects : projects.filter((p) => p.type === filter);
+  const filters = ["All", ...new Set(projects.map((p) => p.type))];
+  const visibleProjects = filter === "All" ? projects : projects.filter((p) => p.type === filter);
 
   return (
     <>
       {loading && (<div className="loader"><div className="loader-flower">✿</div><div className="loader-name">Tehreem Khan</div><div className="loader-line"><span /></div><small>Entering my little digital garden...</small></div>)}
       <MagicCursor />
-      <div className={dark? "app dark" : "app light"}>
+      <div className={dark ? "app dark" : "app light"}>
         <FloatingDecor />
         <header className="navbar">
           <a className="brand" href="#home">Tehreem <span>Khan</span><i>🦋</i></a>
           <button className="menu-btn" onClick={() => setMenu(!menu)} aria-label="Toggle menu">☰</button>
-          <nav className={menu? "nav open" : "nav"}>
-            {nav.map((item) => (<a key={item} href={`#${item}`} onClick={() => setMenu(false)}>{item === "resume"? "Resume" : item[0].toUpperCase() + item.slice(1)}</a>))}
+          <nav className={menu ? "nav open" : "nav"}>
+            {nav.map((item) => (<a key={item} href={`#${item}`} onClick={() => setMenu(false)}>{item === "resume" ? "Resume" : item[0].toUpperCase() + item.slice(1)}</a>))}
           </nav>
-          <button className="theme-toggle" onClick={() => setDark(!dark)} aria-label="Toggle theme"><span>{dark? "☾" : "☀"}</span></button>
+          <button className="theme-toggle" onClick={() => setDark(!dark)} aria-label="Toggle theme"><span>{dark ? "☾" : "☀"}</span></button>
         </header>
 
         <main>
@@ -185,7 +184,13 @@ function App() {
                   <a className="btn ghost" href="#resume">Download CV <span>↓</span></a>
                 </div>
               </div>
-              <div className="hero-quote reveal"><span>“</span>Better things<br />are coming.<small>♡</small></div>
+
+              {/* Properly positioned quote box right inside the hero content area */}
+              <div className="hero-quote-box reveal">
+                <h2>Code with purpose.<br /><em>Design with soul.</em></h2>
+                <p>Every line of code is a tiny step toward a bigger dream.</p>
+                <div className="quote-sign">— Tehreem Khan ✿</div>
+              </div>
             </div>
             <img src="/images/bg-img.jpg" alt="Tehreem Khan" className="hero-girl" />
             <div className="scroll-cue"><span>⌄</span>Scroll Down</div>
@@ -212,7 +217,7 @@ function App() {
             <div className="skills-grid">
               {skills.map(([name, desc], i) => (
                 <div className="skill-card glass-card reveal" key={name} style={{ "--delay": `${i * 60}ms` }}>
-                  <div className="skill-icon">{["◇","◈","JS","⚛","N","M"][i] || "✦"}</div>
+                  <div className="skill-icon">{["◇", "◈", "JS", "⚛", "N", "M"][i] || "✦"}</div>
                   <div><h3>{name}</h3><p>{desc}</p></div>
                 </div>
               ))}
@@ -223,7 +228,7 @@ function App() {
             <SectionTitle eyebrow="Things I've built" title="Featured Projects" text="Explore my recent work and projects." />
             <div className="filter-row">
               {filters.map((f) => (
-                <button key={f} className={filter === f? "filter active" : "filter"} onClick={() => setFilter(f)}>{f}</button>
+                <button key={f} className={filter === f ? "filter active" : "filter"} onClick={() => setFilter(f)}>{f}</button>
               ))}
             </div>
             <div className="project-grid">
@@ -342,18 +347,6 @@ function App() {
                 <h2>Let's build something beautiful.</h2>
               </div>
               <a className="btn primary" href="/resume.pdf" download="Tehreem_Khan_Resume.pdf">Download My CV ↓</a>
-            </div>
-          </section>
-
-          <section className="magic-section">
-            <div className="magic-orbit orbit-a">✦</div>
-            <div className="magic-orbit orbit-b">✿</div>
-            <div className="magic-orbit orbit-c">🦋</div>
-            <div className="magic-quote reveal">
-              <span>“</span>
-              <h2>Code with purpose.<br /><em>Design with soul.</em></h2>
-              <p>Every line of code is a tiny step toward a bigger dream.</p>
-              <div className="quote-sign">— Tehreem Khan ✿</div>
             </div>
           </section>
 
