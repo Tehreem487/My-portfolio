@@ -3,6 +3,15 @@ import "./index.css";
 
 const projects = [
   { 
+    title: "JobPortal — Freelance Marketplace", 
+    type: "Full Stack", 
+    tech: "React • Node • MongoDB • Tailwind", 
+    desc: "A powerful freelance marketplace platform to find expert freelancers, post jobs, manage dashboards, and handle applications seamlessly.", 
+    icon: "💼", 
+    image: "/images/img10.jpg", 
+    liveUrl: "https://freelancing-job-portal-9su1.vercel.app/" 
+  },
+  { 
     title: "StayEase — Hotel Booking App", 
     type: "Full Stack", 
     tech: "React • Node • MongoDB", 
@@ -185,7 +194,7 @@ function App() {
                 </div>
               </div>
 
-              {/* Properly positioned quote box right inside the hero content area */}
+              {/* Quote box inside hero content */}
               <div className="hero-quote-box reveal">
                 <h2>Code with purpose.<br /><em>Design with soul.</em></h2>
                 <p>Every line of code is a tiny step toward a bigger dream.</p>
