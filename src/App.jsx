@@ -365,7 +365,6 @@ function App() {
               <div className="contact-card glass-card reveal">
                 <a href="mailto:tahreemansarkhan@gmail.com"><span>✉</span> tahreemansarkhan@gmail.com</a>
                 <a href="https://www.linkedin.com/in/tehreem-khan-21b749405" target="_blank" rel="noreferrer"><span>in</span> LinkedIn</a>
-                <a href="https://wa.me/923195021128" target="_blank" rel="noreferrer"><span>💬</span> 0319 5021128</a>
               </div>
               <form className="glass-card contact-form reveal" onSubmit={handleFormSubmit}>
                 {formStatus && (
